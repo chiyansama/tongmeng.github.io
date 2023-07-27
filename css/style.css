@@ -12,6 +12,7 @@
 	font-style: normal;
 }
 
+
 @font-face
 {
 	font-family: 'Font-Awesome-Social';
@@ -47,13 +48,13 @@
 	{
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: rgb(49, 49, 49);
 		font-weight: 300;
 	}
 
 	a
 	{
-		color: #3B95C6;
+		color: #3bc669;
 		text-decoration: underline;
 		-moz-transition: color .2s ease-in-out;
 		-webkit-transition: color .2s ease-in-out;
@@ -255,7 +256,7 @@
 		border-radius: 8px;
 		text-shadow: -1px -1px 0.5px rgba(0,0,0,0.5);
 		overflow: hidden;
-		background: #61b8db;
+		background: #61dba2;
 		background-image: -moz-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
 		background-image: -webkit-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
 		background-image: -o-linear-gradient(top, rgba(97,184,219,0), rgba(48,141,196,1));
@@ -283,7 +284,7 @@
 
 		.button:hover
 		{
-			background-color: #76cdf0;
+			background-color: #adf076;
 			color: #fff !important;
 		}
 		
@@ -343,7 +344,7 @@
 			border-radius: 6px;
 			overflow: hidden;
 			background: #444;
-			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), #55ffff);
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
 			background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
@@ -788,7 +789,7 @@
 /*********************************************************************************/
 /* Wrappers                                                                      */
 /*********************************************************************************/
-
+	
 	.wrapper
 	{
 		background-image: url('images/bg.png');
@@ -802,8 +803,7 @@
 
 	.wrapper-style1
 	{
-		background-image: none;
-		background-color: #fff;
+		background-image: url("../images/YXY/2.png");
 	}
 	
 	.wrapper-style2
@@ -816,6 +816,7 @@
 	{
 		background-color: #f4f4f4;
 		text-shadow: 1px 1px 0px #fff;
+		
 	}
 
 	.wrapper-style4
@@ -942,3 +943,5 @@
 		{
 			color: #777;
 		}
+		
+		
