@@ -6,33 +6,94 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
 		<link rel="icon" href="images/me.jpg"
 		<script src="js/jquery.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/shiyueGG/pxmu@1.0.6/pxmu.min.js">
-			pxmu.loading('正在加载');
-		</script>
+					pxmu.loading('正在加载');
+				</script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
-		
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" />
-		<![endif]-->
-		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 	</head>
-	<!-- just copy this entire code into your html below body tag -->
+	<style>
+	    /* 盒子1的样式 */
+	    .chuii{
+	width:700px;
+	height:335px;
+	margin: 0 auto;
+	/* 超出的位置将隐藏并且不占位 */
+	overflow: hidden;  
+	    }
+	    .chuii-1{
+	        width: 4000px;
+	        height: 352px;
+	        animation: move 20s infinite;
+	    }
+	    @keyframes move {
+	       0%{
+	           transform: translateX(0);
+	       }
+	       25%{
+	           transform: translateX(-722px);
+	       }
+		   50%{
+		       transform: translateX(-1444px);
+		   }
+	       100%{
+	           transform: translateX(-2166px);
+	       }
+	    }
+	    .chuii-1 img{
+	      float: left;
+	     height: 352px;
+	     width: 722px;
+	    }
+		@media screen and (max-width: 768px) {
+			.box-style2{
+			max-width: 350px;
+			}
+			.chuii{
+			width:300px;
+			height:335px;
+			margin: 0 auto;
+			}
+			.chuii-1{
+			    width: 2000px;
+			    height: 352px;
+			    animation: move 20s infinite;
+			}
+			.chuii-1 img{
+				float: left;
+			 height: 400px;
+			 width: 350px;
+			}
+			@keyframes move {
+			   0%{
+			       transform: translateX(0);
+			   }
+			   25%{
+			       transform: translateX(-350px);
+			   }
+			   50%{
+			       transform: translateX(-700px);
+			   }
+			   100%{
+			       transform: translateX(-1050px);
+			   }
+			}
+		}
+	</style>
 	<body>
 		<!-- Nav -->
 
 			<nav id="nav">
 					<li><a href="#top">主页</a></li>
-					<li><a href="#work">我们的开发团队</a></li>
 					<li><a href="#portfolio">我们的开发项目</a></li>
+					<li><a href="#work">我们的开发团队</a></li>
 					<li><a href="#contact">与我们取得联系</a></li>
 				</ul>
 			</nav>
@@ -44,21 +105,69 @@
 					<div class="row">
 						<div class="4u">
 							<span class="me image image-full"><img src="images/me.jpg" alt="" /></span>
-							<div align=left>
-								<h6>BGM开关</h6><iframe frameborder="no" border="0" marginwidth="1" marginheight="0" width=200 height=50 src="//music.163.com/outchain/player?type=0&id=5184286063&auto=1&height=32">{float:left;}</iframe>
-							<ul></div>
 
 						</div>
 					
 						<div class="8u">
 							<header>
-								<h2>欢迎您的到来！</h2>
-								<h1><strong>这里是 寐狐星梦工作室</strong>。</h1>
+								<h2 style="color: aliceblue;">欢迎您的到来！</h2>
+								<h1 style="color: aliceblue;"><strong style="color: aliceblue;">这里是 寐狐星梦工作室</strong>。</h1>
 							</header>
-							<p>我们是一个<strong>Minecraft基岩版附加包开发团队</strong>, 我们致力于开发好玩的<strong>附加包&amp;资源包。</strong>为玩家带来快乐</p>
-							<a href="#work" class="button button-big">去看看我们的开发团队！</a>
+							<p style="color: aliceblue;">我们是一个<strong style="color: aliceblue">Minecraft基岩版附加包开发团队</strong>, 我们致力于开发好玩有趣的<strong style="color: aliceblue;">附加包&amp;资源包。</strong>为玩家带来快乐</p>
+							<footer>
+								<p style="color:rgb(141, 250, 51) ;">我们的服务器正在招募新人中！欢迎各位前来游玩！</p>
+								<a href="#portfolio" class="button button-big" >让我们一起去看看</a>
+							</footer>
 						</div>
 					</div>
+				</article>
+			</div>
+
+		<!-- Portfolio -->
+			<div class="wrapper wrapper-style3">
+				<article id="portfolio">
+					<header>
+						<h2>我们正在开发以下项目</h2>
+						<span>带有 * 的项目为待开发状态</span>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<article class="box box-style2" style="width: 800px;">
+									<div class="chuii">
+									        <div class="chuii-1">
+									            <img src="./images/YXY/1.png" alt="">
+												<img src="./images/YXY/3.png" alt="">
+									            <img src="./images/YXY/5.png" alt="">
+												<img src="./images/YXY/1.png" alt="">
+												
+									        </div>
+									</div><br>
+									<a href="https://www.minebbs.com/threads/19782/" class="button button-big" 
+									style="font-size: 20px;height:10px;margin: 0 auto;background-color: orange;" >
+										<p style="font-size: 15px;transform:translateY(-50%);/**上移元素**/
+										-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);">星龙圣域服务器</p></a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2" style="margin-left: 400px;width: 230px;"><br>
+									<h3><a href="https://www.mcbbs.net/thread-1392133-1-1.html">斗龙-宝贝</a></h3>
+									<h3><a href="https://www.mcbbs.net/thread-1392133-1-1.html">斗龙-手环</a></h3>
+									
+									<h3><a href="#container">斗龙-休闲*</a></h3>
+									<h3><a href="#container">斗龙-手刀*</a></h3>
+									<h3><a href="#container">斗龙-核心*</a></h3>
+									<h3><a href="#container">斗龙-进化*</a></h3>
+									<h3><a href="#container">···</a></h3><br><br>
+									<h3 style="font-size: 17px;">斗龙系列游戏附加包</h3>
+									<br>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<a href="#work" class="button button-big">去看看我们的开发团队！</a>
+					</footer>
 				</article>
 			</div>
 
@@ -74,79 +183,27 @@
 						<div class="row">
 							<div class="4u">
 								<section class="box box-style1">
-									<span class="me image image-full"><img src="images/huangyi.jpg" alt="" /></span>
+									<span class="me image image-full" ><img src="images/huangyi.jpg"width="300" height="300" alt="" /></span>
 									<h3>建筑师 【皇一】</h3>
 									<p>他真的很厉害，我们的最强设计担当！</p>
 								</section>
 							</div>
 							<div class="4u">
 								<section class="box box-style1">
-									<span class="me image image-full"><img src="images/luobo.jpg" alt="" /></span>
+									<span class="me image image-full"><img src="images/luobo.jpg"width="300" height="300" alt="" /></span>
 									<h3>工程师【萝卜】</h3>
-									<p>他是我们工作室的基础，也是附加包的实际开发者</p>
+									<p>他是我们工作室的基础，附加包实际开发者</p>
 								</section>
 							</div>
 							<div class="4u">
 								<section class="box box-style1">
-									<span class="me image image-full"><img src="images/chiyan.jpg" alt="" /></span>
+									<span class="me image image-full"><img src="images/chiyan.jpg"width="300" height="300" alt="" /></span>
 									<h3>助手&宣发【赤魇】</h3>
-									<p>他主要负责工作室的账号管理和社群服务，也经常会协助开发，是全能小帮手</p>
+									<p>他主要负责工作室的账号管理和社群服务。</p>
 								</section>
 							</div>
 						</div>
 					</div>
-					<footer>
-						<p>想知道我们正在做些什么？</p>
-						<a href="#portfolio" class="button button-big">让我们一起去看看</a>
-					</footer>
-				</article>
-			</div>
-
-		<!-- Portfolio -->
-			<div class="wrapper wrapper-style3">
-				<article id="portfolio">
-					<header>
-						<h2>我们正在开发以下项目</h2>
-						<span>带有 * 的项目为待开发状态</span>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="12u">
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="https://www.mcbbs.net/thread-1392133-1-1.html" class="image image-full"><img src="images/baobei.jpg" alt="" /></a>
-									<h3><a href="https://www.mcbbs.net/thread-1392133-1-1.html">斗龙-宝贝</a></h3>
-									<h6>点击图片查看详细介绍及下载链接</h6>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="https://www.mcbbs.net/thread-1392133-1-1.html" class="image image-full"><img src="images/baobei.jpg" alt="" /></a>
-									<h3><a href="https://www.mcbbs.net/thread-1392133-1-1.html">斗龙-手环</a></h3>
-									<h6>点击图片查看详细介绍及下载链接</h6>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2"><br>
-									<h3><a href="#container">斗龙-休闲*</a></h3>
-									<h3><a href="#container">斗龙-手刀*</a></h3>
-									<h3><a href="#container">斗龙-核心*</a></h3>
-									<h3><a href="#container">斗龙-进化*</a></h3>
-									<h3><a href="#container">···</a></h3><br><br><br><br><br>
-									<h3><a href="#container">敬请期待*</a></h3>
-									<br>
-								</article>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<p>如果你想游玩我们的项目却又不想加群的话，您可以使用我们不定时更新的<a href="https://www.123pan.com/s/RxGKVv-Go4WA">备用下载站</a></p>
-						
-						<p>[提取码：斗龙战士大写拼音首字母]</p>
-					</footer>
 				</article>
 			</div>
 
@@ -160,8 +217,8 @@
 						<h2>扫描下方二维码，进入我们的官方聊天群</h2>
 						<span>群里有更丰富的资源和实时咨询渠道哦！</span>
 					</header>
-					<img src="images/QRCODE.png"/></a>
-					
+					<img src="images/QRCODE.png" width="300" height="300"/></a></article><br>
+					<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=ws9SPL-cI4FAOmKPl6uLI1POtZZB9gU_&jump_from=webapi&authKey=5V6bIlF5uael+CobeB8KiWfWTpGP+I9FtdhxOCBhoZWrb3MMFIaBo1wCZhBcrKC4"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="【寐狐星梦】斗龙我的" title="【寐狐星梦】斗龙我的"></a>
 
 				</article>
 			</div>
@@ -171,7 +228,7 @@
 	<div style="display:none"><script src='https://jq.qq.com/?_wv=1027&k=mxECDzcC' language='JavaScript' charset='gb2312'></script></div>
 	<SCRIPT LANGUAGE=javascript> 
 		function click() 
-		function click1() {if (event.button==2) {alert('禁止右键点击~！') }} 
+		function click1() {if (event.button==2) {alert('请勿复制！') }} 
 		function CtrlKeyDown(){if (event.ctrlKey) {alert('非法拷贝将损害您的系统！') }} 
 		document.οnkeydοwn=CtrlKeyDown; 
 		document.onselectstart=click; 
